@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4a0711">
+  <meta name="description" content="Invitación a los XV años de Salomé Marin — 26 de julio de 2026.">
+  <title>Salomé — Mis XV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="locked">
+  <div class="grain" aria-hidden="true"></div>
+  <audio id="backgroundMusic" loop preload="auto">
+    <source src="assets/cancion-bella-y-bestia.mp3" type="audio/mpeg">
+  </audio>
+  <button class="music-control" id="musicControl" aria-label="Pausar música" title="Música">
+    <span class="music-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+    <span class="music-label">MÚSICA</span>
+  </button>
+
+  <section class="envelope-screen" id="envelope">
+    <div class="petal petal-one"></div>
+    <div class="petal petal-two"></div>
+    <p class="eyebrow envelope-kicker">UNA NOCHE PARA RECORDAR</p>
+    <div class="envelope" aria-label="Invitación cerrada">
+      <div class="envelope-back"></div>
+      <div class="letter">
+        <span>26 · 07 · 26</span>
+        <strong>Mis XV</strong>
+      </div>
+      <div class="envelope-front"></div>
+      <div class="envelope-flap"></div>
+      <button class="seal" id="openInvitation" aria-label="Abrir invitación">
+        <img src="assets/monogram.png" alt="Monograma SM">
+      </button>
+    </div>
+    <button class="open-label" id="openLabel">ABRIR INVITACIÓN <span>↗</span></button>
+  </section>
+
+  <main id="invitation" aria-hidden="true">
+    <header class="hero">
+      <div class="hero-frame" aria-hidden="true"><span>XV</span></div>
+      <div class="sparkles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="hero-rose hero-rose-left" aria-hidden="true">✦</div>
+      <div class="hero-rose hero-rose-right" aria-hidden="true">✦</div>
+      <p class="eyebrow reveal">26 · JULIO · 2026</p>
+      <div class="logo-wrap reveal">
+        <img src="assets/monogram.png" alt="Monograma de Salomé Marin">
+      </div>
+      <p class="pretitle reveal">MIS QUINCE AÑOS</p>
+      <h1 class="reveal">Salomé <em>Marin</em></h1>
+      <p class="hero-copy reveal">Hay momentos que se guardan para siempre.<br>Quiero compartir este contigo.</p>
+      <a href="#historia" class="scroll-cue" aria-label="Continuar">DESCUBRE LA NOCHE <span>↓</span></a>
+    </header>
+
+    <section class="intro cream-section rose-lined" id="historia">
+      <div class="line-rose" aria-hidden="true">❦</div>
+      <p class="eyebrow burgundy reveal">CON LA BENDICIÓN DE DIOS Y EL AMOR DE MIS PADRES</p>
+      <h2 class="reveal">Skarleth Rodriguez<br><span>&</span> Jesús Marin</h2>
+      <p class="body-copy reveal">Tenemos el honor de invitarte a celebrar una noche irrepetible: el comienzo de una nueva etapa en la vida de nuestra hija.</p>
+      <div class="ornament reveal" aria-hidden="true"><span></span><b>✦</b><span></span></div>
+      <div class="signature reveal">S · M</div>
+    </section>
+
+    <section class="date-section">
+      <div class="dark-frame" aria-hidden="true"></div>
+      <p class="eyebrow reveal">RESERVA LA FECHA</p>
+      <div class="date-lockup reveal">
+        <div><small>DOMINGO</small><strong>26</strong></div>
+        <span class="vertical-rule"></span>
+        <div><h2>Julio</h2><small>2026 · 8:00 PM</small></div>
+      </div>
+      <div class="countdown reveal" id="countdown" aria-label="Cuenta regresiva">
+        <div><strong id="days">00</strong><span>DÍAS</span></div>
+        <div><strong id="hours">00</strong><span>HORAS</span></div>
+        <div><strong id="minutes">00</strong><span>MIN</span></div>
+        <div><strong id="seconds">00</strong><span>SEG</span></div>
+      </div>
+      <a class="ghost-button reveal" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=XV+años+de+Salomé+Marin&dates=20260727T000000Z/20260727T050000Z&details=Acompáñanos+a+celebrar+los+XV+años+de+Salomé&location=Quinta+Gran+Gala+Royal,+Da+Luigi,+Maracay" target="_blank" rel="noopener">AGREGAR AL CALENDARIO ↗</a>
+    </section>
+
+    <section class="place cream-section rose-lined rose-lined-alt">
+      <div class="section-number">01</div>
+      <p class="eyebrow burgundy reveal">EL LUGAR</p>
+      <h2 class="reveal">Quinta Gran<br>Gala Royal</h2>
+      <p class="place-subtitle reveal">DA LUIGI · MARACAY</p>
+      <div class="map-card reveal">
+        <iframe title="Mapa de Quinta Gran Gala Royal, Da Luigi" loading="lazy" src="https://www.google.com/maps?q=Quinta%20Gran%20Gala%20Royal%2C%20Da%20Luigi%2C%20Maracay%2C%20Venezuela&output=embed"></iframe>
+      </div>
+      <a class="solid-button reveal" href="https://www.google.com/maps/dir//Quinta+Gran+Gala+ROYAL,+Avenida+Las+Delicias,+cruce,+con+Avenida+Los+Cocos,+Maracay+2101,+Aragua,+Venezuela/@25.5584269,-80.468195,8z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x8e80250333182cb7:0xa1bf2d61b1bbb5a7!2m2!1d-67.5708301!2d10.2773578?entry=ttu&amp;g_ep=EgoyMDI2MDcwNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">CÓMO LLEGAR ↗</a>
+    </section>
+
+    <section class="dress-section">
+      <div class="dark-frame" aria-hidden="true"></div>
+      <div class="section-number light">02</div>
+      <p class="eyebrow reveal">DRESS CODE</p>
+      <h2 class="reveal">Gala</h2>
+      <p class="body-copy light-copy reveal">Celebremos con elegancia. Tu mejor versión será parte de esta noche.</p>
+      <div class="reserved reveal">
+        <span class="swatch gold"></span>
+        <span class="swatch champagne"></span>
+        <div>
+          <small>COLORES RESERVADOS</small>
+          <p>Dorado & Champagne</p>
+          <em>Con cariño, déjalos brillar solo en la quinceañera.</em>
+        </div>
+      </div>
+    </section>
+
+    <section class="gift cream-section rose-lined">
+      <div class="section-number">03</div>
+      <p class="eyebrow burgundy reveal">UN DETALLE</p>
+      <div class="gift-icon reveal">✧</div>
+      <h2 class="reveal">Tu presencia<br>es mi mejor regalo</h2>
+      <p class="body-copy reveal">Si deseas obsequiarme algo más, una contribución para mis próximos sueños será recibida con mucha ilusión y gratitud.</p>
+      <p class="gift-note reveal">En la celebración encontrarás un espacio especial para tu sobre.</p>
+    </section>
+
+    <section class="rsvp">
+      <div class="dark-frame" aria-hidden="true"></div>
+      <p class="eyebrow reveal">¿NOS ACOMPAÑAS?</p>
+      <h2 class="reveal">Confirma tu<br>asistencia</h2>
+      <p class="reveal">Será un honor contar contigo en esta noche tan especial.</p>
+      <a class="whatsapp-button reveal" id="whatsappLink" href="#" target="_blank" rel="noopener">
+        <span>✦</span> CONFIRMAR POR WHATSAPP
+      </a>
+      <small class="reveal">Agradecemos confirmar antes del 20 de julio</small>
+    </section>
+
+    <footer>
+      <div class="footer-logo"><img src="assets/monogram.png" alt=""></div>
+      <p>Una noche. Un recuerdo. Para siempre.</p>
+      <span>SALOMÉ · XV · 2026</span>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
