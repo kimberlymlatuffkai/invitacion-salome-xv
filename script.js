@@ -62,3 +62,13 @@ document.querySelectorAll(".reveal").forEach((element) => observer.observe(eleme
 
 const message = encodeURIComponent("Hola, confirmo mi asistencia a los XV años de Salomé Marin el 26 de julio. ✨");
 document.querySelector("#whatsappLink").href = `https://wa.me/584243715126?text=${message}`;
+
+const zelleMessage = encodeURIComponent("Hola, quisiera solicitar los datos de Zelle para enviar un obsequio a Salomé. ✨");
+document.querySelector("#zelleLink").href = `https://wa.me/584243715126?text=${zelleMessage}`;
+
+const params = new URLSearchParams(window.location.search);
+const guestName = params.get("para");
+const guestCount = Math.max(1, Math.min(10, Number.parseInt(params.get("invitados"), 10) || 1));
+if (guestName) document.querySelector("#guestName").textContent = guestName;
+document.querySelector("#guestCount").textContent = guestCount;
+document.querySelector("#guestCountLabel").textContent = guestCount === 1 ? "invitado" : "invitados";
